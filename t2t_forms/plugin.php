@@ -46,7 +46,7 @@
 			}
 
 			!is_array(get_option('t2t_options')) ? "" : extract(get_option('t2t_options'));
-			$t2t_link_key = isset($t2t_link_key) ? $t2t_link_key : T2TForms::app()->getItemsPage();
+			$t2t_link_key = isset($t2t_link_key) ? $t2t_link_key : T2TForms::app()->getResultPage();
 			$t2t_domain = isset($t2t_domain) ? $t2t_domain : '';
 			$t2t_secret_key = isset($t2t_secret_key) ? $t2t_secret_key : T2TForms::app()->getSecretKey();
 			$t2t_lang = isset($t2t_lang) ? $t2t_lang : T2TForms::getLang();
